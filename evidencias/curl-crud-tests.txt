@@ -1,0 +1,5 @@
+=== HEALTHCHECK LOCAL ===
+{"status":"ok"}
+
+=== GET RESERVAS LOCAL (PERSISTIDO) ===
+[{"id":2,"cliente":"Teste Persistencia","data":"2026-10-20T00:00:00.000Z","status":"CONFIRMADA"},{"id":3,"cliente":"Nicolas Silva Final","data":"2026-10-25T00:00:00.000Z","status":"CONFIRMADA"}]
