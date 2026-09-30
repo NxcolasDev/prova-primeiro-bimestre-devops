@@ -1,5 +1,24 @@
-=== HEALTHCHECK LOCAL ===
-{"status":"ok"}
+=== POST /reservas (Create) ===
+{"id":7,"cliente":"Nicolas Silva","data":"2026-10-15T00:00:00.000Z","status":"CONFIRMADA"}
 
-=== GET RESERVAS LOCAL (PERSISTIDO) ===
-[{"id":2,"cliente":"Teste Persistencia","data":"2026-10-20T00:00:00.000Z","status":"CONFIRMADA"},{"id":3,"cliente":"Nicolas Silva Final","data":"2026-10-25T00:00:00.000Z","status":"CONFIRMADA"}]
+
+=== GET /reservas (Read All) ===
+[{"id":2,"cliente":"Teste Persistencia","data":"2026-10-20T00:00:00.000Z","status":"CONFIRMADA"},{"id":3,"cliente":"Nicolas Silva Final","data":"2026-10-25T00:00:00.000Z","status":"CONFIRMADA"},{"id":4,"cliente":"Nicolas Silva","data":"2026-10-15T00:00:00.000Z","status":"CONFIRMADA"},{"id":5,"cliente":"Nicolas Silva","data":"2026-10-15T00:00:00.000Z","status":"CONFIRMADA"},{"id":7,"cliente":"Nicolas Silva","data":"2026-10-15T00:00:00.000Z","status":"CONFIRMADA"}]
+
+=== GET /reservas/7 (Read One) ===
+{"id":7,"cliente":"Nicolas Silva","data":"2026-10-15T00:00:00.000Z","status":"CONFIRMADA"}
+
+=== PUT /reservas/7 (Update) ===
+{"id":7,"cliente":"Nicolas Silva","data":"2026-10-16T00:00:00.000Z","status":"FINALIZADA"}
+
+=== GET /reservas/7 (Confirma Update) ===
+{"id":7,"cliente":"Nicolas Silva","data":"2026-10-16T00:00:00.000Z","status":"FINALIZADA"}
+
+=== DELETE /reservas/7 (Delete) ===
+HTTP Status: 204
+
+=== GET /reservas/7 apos DELETE (deve retornar 404) ===
+{"error":"Reserva não encontrada"}
+
+=== GET /health ===
+{"status":"ok"}
