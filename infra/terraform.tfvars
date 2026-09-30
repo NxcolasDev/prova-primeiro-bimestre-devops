@@ -1,6 +1,0 @@
-project      = "prova-devops"
-key_name     = "vockey"
-app_repo_url = "https://github.com/Nicolas-Sdjs/prova-primeiro-bimestre-devops"
-db_user      = "postgres"
-db_password  = "postgres123"
-db_name      = "reservas"

@@ -4,4 +4,5 @@ node_modules/
 *.tfstate
 *.tfstate.*
 *.pem
-.DS_Store
+.DS_Store*.tfvars
+*.tfvars >> .gitignore.tfvars.example
